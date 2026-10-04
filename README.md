@@ -1,85 +1,84 @@
-<h1 align="center">Zixuan Wei&nbsp;·&nbsp;魏子轩</h1>
-
 <p align="center">
-  <a href="https://github.com/siye566">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=1200&color=58A6FF&center=true&vCenter=true&width=640&height=60&lines=Building+agents+that+plan%2C+call+tools%2C+and+remember;Python+%C2%B7+LangGraph+%C2%B7+MCP+%C2%B7+Evaluation" alt="typing" />
-  </a>
+  <img src="assets/hero.svg" width="100%" alt="Zixuan Wei · AI Agent Engineering — Controlled workflows. Verifiable execution." />
 </p>
 
----
+<h2 align="center">魏子轩 · AI Agent Engineering</h2>
+<p align="center">把业务流程做成可运行、可追踪、可核验的 Agent 系统。</p>
+<p align="center">
+  <a href="#精选项目">精选项目</a> ·
+  <a href="#开源贡献">开源贡献</a> ·
+  <a href="#工程关注">工程关注</a> ·
+  <a href="https://github.com/siye566?tab=repositories">全部仓库</a>
+</p>
 
-### &nbsp;About
+电子信息硕士在读，广东工业大学。围绕 Python / TypeScript 开发 Agent 业务原型，关注 Workflow 编排、工具调用边界、持久化状态与评估回放；通过开源贡献处理运行时、路径和平台兼容问题。
 
-- 🎯 **Agent engineering** — orchestration, tool use, memory, and evaluation for long-horizon tasks
-- 🧪 Fixing things upstream in the agent-runtime ecosystem: **mem0** · **deer-flow** · **LangGraph** · **Octop**
-- 🎓 M.S. student in Electronic Information, Guangdong University of Technology
-- 🧰 Daily drivers: Python · uv · pytest · Git
+## 精选项目
 
-### &nbsp;Toolkit
+<table>
+<tr>
+<td width="50%" valign="top">
+  <a href="https://github.com/siye566/fengyun-service-agent"><img src="assets/project-service.svg" width="100%" alt="空压机售后 Agent：持久化报修、企业隔离、上下文预算" /></a>
+  <p>将报修、保养和进度查询组织为受控流程。保存待确认任务，校验企业与设备归属，记录上下文来源及预算，并提供离线流程 Benchmark。</p>
+  <p><a href="https://github.com/siye566/fengyun-service-agent#快速体验">启动方法</a> · <a href="https://github.com/siye566/fengyun-service-agent/blob/main/docs/implementation-map.md">能力与源码</a> · <a href="https://github.com/siye566/fengyun-service-agent/blob/main/docs/validation.md">验证记录</a></p>
+</td>
+<td width="50%" valign="top">
+  <a href="https://github.com/siye566/visaflow"><img src="assets/project-visa.svg" width="100%" alt="VisaFlow：Rule Pack、阶段门禁、材料核验与 Trace Replay" /></a>
+  <p>将信息采集、类型判断、清单生成、材料核验和补正复核串成五阶段 Workflow。固定规则版本、保留字段证据，通过 MCP / CLI 执行并回放调用。</p>
+  <p><a href="https://github.com/siye566/visaflow#启动方法">启动方法</a> · <a href="https://github.com/siye566/visaflow/blob/main/docs/workflow-and-tools.md">工具与流程</a> · <a href="https://github.com/siye566/visaflow/blob/main/docs/evaluation-report.json">评估报告</a></p>
+</td>
+</tr>
+</table>
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=py,fastapi,linux,bash,git,github,md&theme=dark" alt="stack" />&nbsp;
-  <img src="https://img.shields.io/badge/LangGraph-1f6feb?style=flat-square" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/LangChain-238636?style=flat-square" alt="LangChain" />
-  <img src="https://img.shields.io/badge/MCP-8957e5?style=flat-square" alt="MCP" />
-  <img src="https://img.shields.io/badge/pytest-0d1117?style=flat-square" alt="pytest" />
-  <img src="https://img.shields.io/badge/uv-de5833?style=flat-square" alt="uv" />
-</div>
+两项项目均提供脱敏或合成演示数据，并在仓库中说明实际实现、验证范围与待接入能力。
 
-### &nbsp;Open source
+## 开源贡献
 
-| | Project | Status |
+近期已合并的上游贡献，点击 PR 可查看具体代码与讨论。
+
+| 项目 | 已合并的改动 | PR |
 | --- | --- | --- |
-| 🔧 | [folio](https://github.com/helsome/folio) | **merged** — typed financial answer blocks for Copilot |
-| 📄 | [GLM-5](https://github.com/zai-org/GLM-5) | **merged** — fixed dead skill link in the master skill catalog |
-| 🔧 | [deer-flow](https://github.com/bytedance/deer-flow) | in review — utf-8 decoding hardened across the local sandbox backend |
-| 🔧 | [mem0](https://github.com/mem0ai/mem0) | in review — checkpoint drain + close-race safety in `Memory` |
-| 🔧 | [Octop](https://github.com/TencentCloud/Octop) | in review — startup encoding + OCR install timeout |
-| 🔍 | [LangGraph](https://github.com/langchain-ai/langgraph) · [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | root-cause verification on upstream issues |
+| **deer-flow** | 本地沙箱子进程统一 UTF-8 解码 | [#5905](https://github.com/bytedance/deer-flow/pull/5905) |
+| **deer-flow** | 拒绝带上标字符的 Windows 保留设备名 | [#6148](https://github.com/bytedance/deer-flow/pull/6148) |
+| **deer-flow** | 无符号链接权限时保持浏览器资源检查可运行 | [#6267](https://github.com/bytedance/deer-flow/pull/6267) |
+| **folio** | 为 Copilot 增加类型化金融回答展示块 | [#81](https://github.com/helsome/folio/pull/81) |
+| **GLM-5** | 修复主技能目录中的失效链接 | [#157](https://github.com/zai-org/GLM-5/pull/157) |
 
-### &nbsp;Stats
+<details>
+<summary>进行中的贡献与完整记录</summary>
 
-<div align="center">
-  <a href="https://github.com/siye566">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=siye566&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=1f6feb&text_color=c9d1d9" />
-      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=siye566&show_icons=true&hide_border=true&bg_color=FFFFFF&title_color=0969DA&icon_color=0969DA&text_color=1F2328" />
-      <img src="https://github-readme-stats.vercel.app/api?username=siye566&show_icons=true&hide_border=true" alt="stats" />
-    </picture>
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=siye566&layout=compact&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=c9d1d9" />
-      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=siye566&layout=compact&hide_border=true&bg_color=FFFFFF&title_color=0969DA&text_color=1F2328" />
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siye566&layout=compact&hide_border=true" alt="top langs" />
-    </picture>
-  </a>
-</div>
+状态核验日期：2026-10-04。以下 PR 当时为 Open，后续状态以上游页面为准。
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=siye566&hide_border=true&background=0D1117&border=0D1117&dates=8B949E" />
-    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=siye566&hide_border=true&background=FFFFFF&dates=57606A" />
-    <img src="https://streak-stats.demolab.com?user=siye566&hide_border=true" alt="streak" />
-  </picture>
-</div>
+| 项目 | 改动方向 | PR |
+| --- | --- | --- |
+| Octop | Skill Manager 子进程输出统一 UTF-8 解码 | [#1590](https://github.com/TencentCloud/Octop/pull/1590) |
+| AutoGPT | Copilot 执行已验证的图版本 | [#15162](https://github.com/Significant-Gravitas/AutoGPT/pull/15162) |
+| E2B | 修正 dockerignore 前导 globstar 后的字面后缀匹配 | [#1934](https://github.com/e2b-dev/E2B/pull/1934) |
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=siye566&bg_color=0D1117&color=c9d1d9&line=58A6FF&point=58A6FF&area=true&area_color=1f6feb&hide_border=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=siye566&bg_color=FFFFFF&color=1F2328&line=0969DA&point=0969DA&area=true&area_color=54aeff&hide_border=true" />
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=siye566&area=true&hide_border=true" alt="activity graph" />
-  </picture>
-</div>
+[全部 PR](https://github.com/pulls?q=is%3Apr+author%3Asiye566) · [已合并 PR](https://github.com/pulls?q=is%3Apr+author%3Asiye566+is%3Amerged)
 
-### &nbsp;Contribution snake
+</details>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/siye566/siye566/output/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/siye566/siye566/output/snake.svg" />
-    <img src="https://raw.githubusercontent.com/siye566/siye566/output/snake.svg" alt="contribution snake" />
-  </picture>
-</div>
+## 工程关注
 
----
+| 方向 | 实践重点 |
+| --- | --- |
+| **Workflow & State** | 阶段许可、持久化任务、澄清与确认、失败后可恢复 |
+| **Tool Contracts** | 结构化输入输出、可信身份绑定、写操作门禁与作用域校验 |
+| **Context & Evidence** | 分段上下文、预算控制、规则来源、文件位置与证据引用 |
+| **Eval & Replay** | 正常/错误/模糊样例、状态核验、调用追踪与版本漂移检测 |
 
-<p align="center"><sub>long-horizon problems, one commit at a time</sub></p>
+<p><img src="assets/toolkit.svg" width="100%" alt="Python · TypeScript · React · SQLite · MCP · uv · pytest · Git" /></p>
+
+<details>
+<summary>贡献足迹</summary>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/siye566/siye566/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/siye566/siye566/output/snake.svg" />
+  <img src="https://raw.githubusercontent.com/siye566/siye566/output/snake.svg" width="100%" alt="GitHub contribution snake" />
+</picture>
+
+</details>
+
+<p align="center"><sub>Build the workflow. Keep the evidence. Make it reproducible.</sub></p>
