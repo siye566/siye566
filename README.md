@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="四野 · AI Agent Engineering — Controlled workflows. Verifiable execution." />
+  <img src="assets/siye-banner.svg" width="100%" alt="四野 · AI Agent Engineering — Controlled workflows. Verifiable execution." />
 </p>
 
 <h2 align="center">四野 · AI Agent Engineering</h2>
