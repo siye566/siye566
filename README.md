@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Zixuan Wei · AI Agent Engineering — Controlled workflows. Verifiable execution." />
+  <img src="assets/hero.svg" width="100%" alt="四野 · AI Agent Engineering — Controlled workflows. Verifiable execution." />
 </p>
 
-<h2 align="center">魏子轩 · AI Agent Engineering</h2>
+<h2 align="center">四野 · AI Agent Engineering</h2>
 <p align="center">把业务流程做成可运行、可追踪、可核验的 Agent 系统。</p>
 <p align="center">
   <a href="#精选项目">精选项目</a> ·
